@@ -20,7 +20,8 @@ RUN apt-get update && \
 	apt-get autoremove -y && \
 	rm -rf /*.zip /tmp/* /var/tmp/* /var/lib/apt/lists/*
 
-RUN sed -i 's/127\.0\.0\.1/0.0.0.0/g' /usr/share/i2p/i2ptunnel.config && \
+RUN sed -i 's/wrapper\.java\.maxmemory=128/wrapper\.java\.maxmemory=512/g' /etc/i2p/wrapper.config && \
+		sed -i 's/127\.0\.0\.1/0.0.0.0/g' /usr/share/i2p/i2ptunnel.config && \
     sed -i 's/::1,127\.0\.0\.1/0.0.0.0/g' /usr/share/i2p/clients.config && \
     echo "i2cp.tcp.bindAllInterfaces=true\n" >> /usr/share/i2p/router.config && \
     echo "i2np.ipv4.firewalled=true\ni2np.ntcp.ipv6=false\n" >> /usr/share/i2p/router.config && \
