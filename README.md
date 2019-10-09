@@ -7,7 +7,7 @@
   <a href="https://github.com/j4ym0/i2p-docker/releases">
     <img alt="latest version" src="https://img.shields.io/github/v/tag/j4ym0/i2p-docker.svg" />
   </a>
-  <a href="https://hub.docker.com/r/j4ym0/i2l">
+  <a href="https://hub.docker.com/r/j4ym0/i2p">
     <img alt="Pulls from DockerHub" src="https://img.shields.io/docker/pulls/j4ym0/i2p.svg?style=flat-square" />
   </a>
 </p>
