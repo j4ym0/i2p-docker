@@ -8,7 +8,7 @@ RUN apt-get update && \
 	echo "deb-src https://deb.i2p2.de/ buster main" >> /etc/apt/sources.list.d/i2p.list && \
 	cd /tmp && \
 	mkdir -p /usr/share/man/man1 && \
-	curl -o i2p-debian-repo.key.asc https://geti2p.net/_static/i2p-debian-repo.key.asc && \
+	curl -s -o i2p-debian-repo.key.asc https://geti2p.net/_static/i2p-debian-repo.key.asc && \
 	apt-key add i2p-debian-repo.key.asc && \
 	apt-get update && \
 	apt-get install -y i2p=0.9.42* i2p-keyring && \
