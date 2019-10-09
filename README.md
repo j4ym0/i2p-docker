@@ -29,8 +29,7 @@ Browsing proxy port : 4444
 
 Connecting to console log
 
-`docker attach i2p`
-
+`docker attach i2p` and detach with <kbd>CTRL</kbd>+<kbd>p</kbd>+<kbd>q</kbd>
 
 ## Credits
 
