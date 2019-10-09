@@ -20,10 +20,11 @@ Latest release: https://geti2p.net/download
 
 i2p config dir is located in the /i2p folder it will create a new folder `.i2p`. It is recomended to mount this dir on the host system to provend data loss when updateing the image and make it easier to get to your downloaded torrents `/home/i2p/.i2p/i2psnark`
 
-`sudo docker run -it -p 0.0.0.0:4444:4444 -p 0.0.0.0:6668:6668 -p 0.0.0.0:7657:7657 -v /home/i2p:/i2p --name i2p j4ym0/i2p`
+`docker run -it -p 0.0.0.0:4444:4444 -p 0.0.0.0:6668:6668 -p 0.0.0.0:7657:7657 -v /home/i2p:/i2p --name i2p j4ym0/i2p`
 
 
 Console port : 7657
+
 Browsing proxy port : 4444
 
 
