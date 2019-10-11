@@ -22,7 +22,7 @@ i2p config dir is located in the `/i2p` folder it will create a new folder `.i2p
 
 `docker run -d -p 0.0.0.0:4444:4444 -p 0.0.0.0:6668:6668 -p 0.0.0.0:7657:7657 -p 23238:23238 -v /home/i2p:/i2p --name i2p j4ym0/i2p`
 
-Dont fotget to expose your udp network port if your network says firewalled `-p 23238:23238`
+Dont fotget to expose your udp network port if your network says firewalled `-p 23238:23238/udp`
 
 If you are having issues with permissions try changing the owner with `chown -R 999:0 /your/local/i2p/folder`
 
