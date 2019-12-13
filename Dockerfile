@@ -11,7 +11,7 @@ RUN apt-get update && \
 	curl -s -o i2p-debian-repo.key.asc https://geti2p.net/_static/i2p-debian-repo.key.asc && \
 	apt-key add i2p-debian-repo.key.asc && \
 	apt-get update && \
-	apt-get install -y i2p=0.9.43* i2p-keyring && \
+	apt-get install -y i2p=0.9.44* i2p-keyring && \
 	mkdir /i2p && \
 	groupadd -g 999 i2p && \
     useradd -r -u 999 -g i2p i2p --home /i2p && \
