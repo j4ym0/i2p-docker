@@ -3,7 +3,7 @@ FROM ubuntu:latest
 EXPOSE 4444 4445 6668 7654 7656 7657 7658 7659 7660 8998
 
 RUN apt-get update && \
-	apt-get install --no-install-recommends -y ca-certificates apt-transport-https curl gnupg procps && \
+	apt-get install --no-install-recommends -y ca-certificates software-properties-common curl gnupg procps && \
 	apt-add-repository -y ppa:i2p-maintainers/i2p && \
 	apt-get update && \
 	apt-get install -y i2p=0.9.46* i2p-keyring && \
@@ -11,7 +11,7 @@ RUN apt-get update && \
 	groupadd -g 999 i2p && \
 	useradd -r -u 999 -g i2p i2p --home /i2p && \
 	chown -R i2p:i2p /i2p && \
-	apt-get purge -y gnupg && \
+	apt-get purge -y gnupg software-properties-common && \
 	apt-get autoremove -y && \
 	rm -rf /*.zip /tmp/* /var/tmp/* /var/lib/apt/lists/*
 
