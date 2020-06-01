@@ -4,7 +4,7 @@ EXPOSE 4444 4445 6668 7654 7656 7657 7658 7659 7660 8998
 
 RUN apt-get update && \
 	apt-get install --no-install-recommends -y ca-certificates apt-transport-https curl gnupg procps && \
-	sudo apt-add-repository -y ppa:i2p-maintainers/i2p && \
+	apt-add-repository -y ppa:i2p-maintainers/i2p && \
 	apt-get update && \
 	apt-get install -y i2p=0.9.46* i2p-keyring && \
 	mkdir /i2p && \
