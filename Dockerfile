@@ -1,9 +1,9 @@
-FROM ubuntu:latest
+FROM ubuntu
 
 EXPOSE 4444 4445 6668 7654 7656 7657 7658 7659 7660 8998
 
 RUN apt-get update && \
-	apt-get install --no-install-recommends -y ca-certificates software-properties-common curl gnupg procps && \
+	apt-get install --no-install-recommends -y ca-certificates software-properties-common curl gnupg procps openjdk-18-jre-headless && \
 	apt-add-repository -y ppa:i2p-maintainers/i2p && \
 	apt-get update && \
 	apt-get install -y i2p=1.8.0* && \
