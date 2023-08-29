@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get install --no-install-recommends -y ca-certificates software-properties-common curl gnupg procps openjdk-18-jre-headless && \
 	apt-add-repository -y ppa:i2p-maintainers/i2p && \
 	apt-get update && \
-	apt-get install -y i2p=2.1.0* && \
+	apt-get install -y i2p=2.3.0* && \
 	mkdir /i2p && \
 	groupadd -g 999 i2p && \
 	useradd -r -u 999 -g i2p i2p --home /i2p && \
